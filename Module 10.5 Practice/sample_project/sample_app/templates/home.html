@@ -57,5 +57,8 @@
 
     {% comment %} Timesince Filter {% endcomment %}
     <h3>{{ postTime | timesince }}</h3>
+
+    {% comment %} Truncatechars Filter {% endcomment %}
+    <h3>{{ string | truncatechars:7 }}</h3>
 </body>
 </html>
