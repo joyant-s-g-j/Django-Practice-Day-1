@@ -13,6 +13,7 @@ def home(request):
             {'name': 'Dave', 'age': 22},
             {'name': 'Joe', 'age': 31},
          ],
-         
+         'es' : '<p>You are <em>pretty</em> smart!</p>' ,
+         'fruit' : ['Apple', 'Mango', 'Orange']
          }
     return render(request, 'home.html', f)

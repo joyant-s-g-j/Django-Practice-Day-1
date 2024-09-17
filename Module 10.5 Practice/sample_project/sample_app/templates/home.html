@@ -27,5 +27,10 @@
 
     {% comment %} Dictsort Filter {% endcomment %}
     <h3>{{ details | dictsort:"name" }}</h3>
+
+    {% comment %} Escape Filter {% endcomment %}
+    <h3>{{ es | escape}}</h3>
+
+    {% comment %} First Filter {% endcomment %}
 </body>
 </html>
