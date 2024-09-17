@@ -21,5 +21,11 @@
 
     {% comment %} Capfirst Filter {% endcomment %}
     <h3>{{ nm | capfirst}}</h3>
+
+    {% comment %} Cut Filter {% endcomment %}
+    <h3>{{string | cut:" "}}</h3>
+
+    {% comment %} Dictsort Filter {% endcomment %}
+    <h3>{{ details | dictsort:"name" }}</h3>
 </body>
 </html>
