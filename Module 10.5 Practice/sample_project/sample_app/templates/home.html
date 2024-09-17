@@ -13,5 +13,7 @@
     {% comment %} Date Filter {% endcomment %}
     <h3>{{ date | date:"SHORT_DATE_FORMAT" }}</h3>
 
+    {% comment %} Length Filter {% endcomment %}
+    <h3>{{val | length}}</h3>
 </body>
 </html>
