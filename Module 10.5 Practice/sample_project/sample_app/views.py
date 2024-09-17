@@ -14,6 +14,7 @@ def home(request):
             {'name': 'Joe', 'age': 31},
          ],
          'es' : '<p>You are <em>pretty</em> smart!</p>' ,
-         'fruit' : ['Apple', 'Mango', 'Orange']
+         'fruit' : ['Apple', 'Mango', 'Orange'],
+         'ani' : """cat\ndog\nhorse"""
          }
     return render(request, 'home.html', f)
