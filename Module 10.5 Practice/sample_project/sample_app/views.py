@@ -2,6 +2,8 @@ from django.shortcuts import render
 import datetime
 # Create your views here.
 def home(request):
+    post_time_str = '2024-09-14T10:30:00'
+    post_time = datetime.datetime.fromisoformat(post_time_str)
     f = {'name' : ['Joyant', 'Sheikhar', 'Gupta', 'Joy'], 
          'date' : datetime.datetime.now(),
          'val' : '', 
@@ -16,6 +18,7 @@ def home(request):
          'es' : '<p>You are <em>pretty</em> smart!</p>' ,
          'fruit' : ['Apple', 'Mango', 'Orange'],
          'ani' : """cat\ndog\nhorse""",
-         'ttl' : 'It is a title'
+         'ttl' : 'It is a title',
+         'postTime' : post_time
          }
     return render(request, 'home.html', f)

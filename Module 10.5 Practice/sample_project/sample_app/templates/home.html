@@ -55,5 +55,7 @@
     {% comment %} Slice Filter {% endcomment %}
     <h3>{{ name | slice:'2' }}</h3>
 
+    {% comment %} Timesince Filter {% endcomment %}
+    <h3>{{ postTime | timesince }}</h3>
 </body>
 </html>
