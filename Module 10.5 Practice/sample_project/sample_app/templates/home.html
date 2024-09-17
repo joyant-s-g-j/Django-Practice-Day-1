@@ -67,5 +67,8 @@
     {% comment %} Striptags Filter {% endcomment %}
     <h3>{{ line | striptags }}</h3>
 
+    {% comment %} Pluralize Filter {% endcomment %}
+    <h3>You have {{ msg }} message{{ msg | pluralize }}</h3>
+
 </body>
 </html>
