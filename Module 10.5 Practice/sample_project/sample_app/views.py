@@ -15,10 +15,11 @@ def home(request):
             {'name': 'Dave', 'age': 22},
             {'name': 'Joe', 'age': 31},
          ],
-         'es' : '<p>You are <em>pretty</em> smart!</p>' ,
+         'es' : '<p>You are <em>pretty</em> smart!</p>',
          'fruit' : ['Apple', 'Mango', 'Orange'],
          'ani' : """cat\ndog\nhorse""",
          'ttl' : 'It is a title',
-         'postTime' : post_time
+         'postTime' : post_time,
+         'line' : '<b>I</b> <button>love</button> <span>dogs</span>'
          }
     return render(request, 'home.html', f)
