@@ -15,6 +15,7 @@ def home(request):
          ],
          'es' : '<p>You are <em>pretty</em> smart!</p>' ,
          'fruit' : ['Apple', 'Mango', 'Orange'],
-         'ani' : """cat\ndog\nhorse"""
+         'ani' : """cat\ndog\nhorse""",
+         'ttl' : 'It is a title'
          }
     return render(request, 'home.html', f)
