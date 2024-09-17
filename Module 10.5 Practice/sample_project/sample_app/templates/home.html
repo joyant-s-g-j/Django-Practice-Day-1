@@ -70,5 +70,8 @@
     {% comment %} Pluralize Filter {% endcomment %}
     <h3>You have {{ msg }} message{{ msg | pluralize }}</h3>
 
+    {% comment %} Make_list Filter {% endcomment %}
+    <h3>{{ nm | make_list }}</h3>
+
 </body>
 </html>
