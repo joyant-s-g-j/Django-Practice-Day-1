@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>this is home page</h1>
+    {% comment %} Join Filter {% endcomment %}
+    <h3>{{name}}</h3>
+    <h3>{{ name | join:" " }}</h3>
+
 </body>
 </html>
