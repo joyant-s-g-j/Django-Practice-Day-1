@@ -52,5 +52,8 @@
     {% comment %} Random Filter {% endcomment %}
     <h3>{{ name | random }}</h3>
 
+    {% comment %} Slice Filter {% endcomment %}
+    <h3>{{ name | slice:'2' }}</h3>
+
 </body>
 </html>
